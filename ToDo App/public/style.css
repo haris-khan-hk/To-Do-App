@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background: url(Background.jpg) no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  background-color: #1e1e2f;
+  color: white;
+  width: 450px;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#signup {
+  display: none;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+input {
+  color: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding-left: 1.5rem;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+.input-group {
+  padding: 1% 0;
+  position: relative;
+}
+.input-group i {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  margin: 7px 1px;
+}
+input:focus {
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid #504f4f;
+}
+input::placeholder {
+  color: transparent;
+}
+
+button {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover {
+  background: #525151;
+  color: white;
+}
+.or {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #fff0f0;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+  margin-top: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+#signUpButton,
+#signInButton {
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#signUpButton:hover,
+#signInButton:hover {
+  text-decoration: underline;
+  color: rgb(99, 98, 98);
+}
+
+/* ToDo App */
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+#todoList li .delete-btn {
+  background: transparent;
+  border: none;
+  color: #ff4d4d;
+  width: fit-content;
+  position: absolute;
+  right: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#todoList li .delete-btn:hover {
+  color: #ff1a1a;
+}
